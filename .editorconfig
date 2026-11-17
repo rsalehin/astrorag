@@ -1,0 +1,20 @@
+# Editor settings shared by everyone working on this repo (https://editorconfig.org).
+# "root = true" means: don't look for more .editorconfig files in parent folders.
+root = true
+
+# Defaults for every file.
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# make requires real TAB characters before every command line.
+[Makefile]
+indent_style = tab
+
+# Config formats conventionally use 2-space indentation.
+[*.{yml,yaml,json,toml}]
+indent_size = 2
