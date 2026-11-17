@@ -1,0 +1,12 @@
+# Store every text file with Linux line endings (LF) in the repository.
+# "text=auto" lets Git decide what is text; "eol=lf" fixes the line ending.
+* text=auto eol=lf
+
+# Shell scripts and Makefiles break with Windows line endings (CRLF): force LF.
+*.sh     text eol=lf
+Makefile text eol=lf
+
+# Binary files: never try to convert anything inside them.
+*.png  binary
+*.pdf  binary
+*.vhdx binary

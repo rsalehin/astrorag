@@ -21,4 +21,17 @@ Phase 01 — engineering foundation.
 3. Open a PR using the template; CI must pass; squash-merge with a Conventional Commits title.
 
 ## Getting started
-Setup instructions arrive with issues AST-7 (WSL/Docker) and AST-9 (backend).
+## Getting started (Windows 11 + WSL2)
+
+1. Set up the machine as described in Linear issue AST-7: Ubuntu on WSL2 with its disk on D:,
+   Docker Desktop with WSL integration, and the NVIDIA driver on Windows.
+2. Inside Ubuntu, clone and check the machine:
+
+```bash
+   mkdir -p ~/code && cd ~/code
+   gh repo clone rsalehin/astrorag && cd astrorag
+   make doctor
+```
+
+3. Every line should show ✓. For anything marked ✗, follow the hint printed under it and run
+   `make doctor` again. Run `make` to see all available commands.
